@@ -1,0 +1,28 @@
+diff --git a/index.js b/index.js
+index d4c8e63..a7b4535 100644
+--- a/index.js
++++ b/index.js
+@@ -44,9 +44,8 @@ registerSearchProviders();
+ // insert your custom version of the code in the registerCustomComponentTypes function here instead.
+ registerCustomComponentTypes(terria);
+ 
+-if (process.env.NODE_ENV === "development") {
+-  window.viewState = viewState;
+-}
++// ベンチマーク用：計測スクリプトがカメラとタイルを触れるよう、本番ビルドでも公開する
++window.viewState = viewState;
+ 
+ export default terria
+   .start({
+diff --git a/wwwroot/index.ejs b/wwwroot/index.ejs
+index b5126f9..8eeee51 100644
+--- a/wwwroot/index.ejs
++++ b/wwwroot/index.ejs
+@@ -100,5 +100,7 @@
+   <body>
+     <div id="svg-sprites" style="display: none"></div>
+     <div id="ui"></div>
++    <!-- ベンチマーク用：カメラの操作と計測（bench/ は TerriaMap 本体とは別に置く） -->
++    <script type="module" src="bench/terria-adapter.js"></script>
+   </body>
+ </html>

@@ -1,0 +1,4 @@
+engine,version,scenario,drawn_fraction,settled_ms,settle_after_ms,first_tile_ms,fps_mean,frame_p95_ms,slow_frame_ratio,main_thread_fps,tile_requests,tile_mb,tile_median_ms,tile_p95_ms,renderer_peak_mb,gpu_peak_mb,js_heap_peak_mb,runs
+terria,terriajs 8.13.0 (terriajs-cesium 26.0.0),initial,0.44,6655.3,,1551.61,,,,,161,76.87,345.41,997.33,1416.77,265.05,180.46,5
+terria,terriajs 8.13.0 (terriajs-cesium 26.0.0),orbit,0.44,5.7,5.7,,84.37,22,0,84.37,200,35.41,67.39,159.58,1789.53,409.38,347.75,5
+terria,terriajs 8.13.0 (terriajs-cesium 26.0.0),zoom,0.44,3.3,3.3,,98.51,19.7,0,98.5,178,70.92,140.61,1024.23,1691.67,359.44,264.32,5

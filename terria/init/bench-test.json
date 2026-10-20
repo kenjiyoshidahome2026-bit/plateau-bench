@@ -1,0 +1,37 @@
+{
+ "catalog": [
+  {
+   "type": "3d-tiles",
+   "id": "bench-tiles",
+   "name": "PLATEAU 千代田区 LOD2",
+   "url": "/testtiles/tileset.json",
+   "shadows": "NONE"
+  }
+ ],
+ "workbench": [
+  "bench-tiles"
+ ],
+ "viewerMode": "3dSmooth",
+ "baseMaps": {
+  "items": [
+   {
+    "item": {
+     "id": "bench-empty",
+     "name": "なし",
+     "type": "composite",
+     "members": []
+    }
+   }
+  ],
+  "defaultBaseMapId": "bench-empty",
+  "enabledBaseMaps": [
+   "bench-empty"
+  ]
+ },
+ "initialCamera": {
+  "west": 139.75,
+  "south": 35.67,
+  "east": 139.785,
+  "north": 35.69
+ }
+}

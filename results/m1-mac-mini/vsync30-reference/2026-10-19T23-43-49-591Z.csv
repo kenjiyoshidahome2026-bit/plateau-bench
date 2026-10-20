@@ -1,0 +1,13 @@
+engine,version,scenario,drawn_fraction,settled_ms,first_tile_ms,fps_mean,frame_p95_ms,slow_frame_ratio,main_thread_fps,tile_requests,tile_mb,tile_median_ms,tile_p95_ms,renderer_peak_mb,gpu_peak_mb,js_heap_peak_mb,runs
+maplibre,maplibre-gl 6.15.0,initial,0.23,4831.2,492.49,,,,,161,76.86,178.33,809.28,1203.69,248.98,351.5,5
+maplibre,maplibre-gl 6.15.0,orbit,0.23,509.1,,53.33,30.1,0.02,26.63,600,215.41,58.76,568.7,2225.89,399.63,1151.93,5
+maplibre,maplibre-gl 6.15.0,zoom,0.23,28.7,,54.92,30.9,0.02,27.45,463,172.15,116.83,552.78,1885.14,353.66,738.59,5
+cesium,cesium 1.146.0,initial,0.24,5048.3,876.78,,,,,161,76.87,334.95,1046.13,1061.98,245.38,157.74,5
+cesium,cesium 1.146.0,orbit,0.24,20.7,,30,35.7,0.47,30.01,66,11.62,37.67,112.21,1392.42,357.16,148.09,5
+cesium,cesium 1.146.0,zoom,0.24,24.7,,30,35.2,0.43,30.01,7,0.61,31.88,41.43,1125.75,268.23,119.3,5
+ortho-earth,@ortho-earth/globe 2.0.2,initial,0.23,5021.3,699.37,,,,,139,73.9,141.95,469.44,1020.3,208.08,7.2,5
+ortho-earth,@ortho-earth/globe 2.0.2,orbit,0.23,17.2,,30,34.7,0.45,30.01,218,39.26,31.79,81.45,1350.2,208.7,12.99,5
+ortho-earth,@ortho-earth/globe 2.0.2,zoom,0.23,3,,30,34.6,0.43,30,341,126.12,88.56,372.38,1458.23,210.48,11.01,5
+navara,@navaramap/three 0.2.1,initial,0.24,5284,849,,,,,168,80.42,688.07,1143.87,1271.75,265.42,74,5
+navara,@navaramap/three 0.2.1,orbit,0.24,28,,30,35.5,0.46,30.01,483,155.48,140.87,747.26,1849.25,417.11,144.41,5
+navara,@navaramap/three 0.2.1,zoom,0.24,29.8,,30,35.6,0.46,30.01,382,136.6,369.53,883.23,1815.81,390.47,139.67,5

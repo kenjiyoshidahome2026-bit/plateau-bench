@@ -1,0 +1,1021 @@
+{
+ "meta": {
+  "date": "2026-10-20T01:10:05.233Z",
+  "host": {
+   "platform": "darwin",
+   "release": "25.5.0",
+   "cpus": "Apple M1",
+   "cores": 8,
+   "memGB": 16
+  },
+  "args": {
+   "BASE": "http://localhost:4173",
+   "TERRIA": "http://localhost:3002",
+   "QUERY": "",
+   "RUNS": 5,
+   "ENGINES": [
+    "terria"
+   ],
+   "SCENARIOS": [
+    "initial",
+    "orbit",
+    "zoom"
+   ],
+   "W": 1920,
+   "H": 1080,
+   "vsync": false,
+   "headless": false
+  }
+ },
+ "runs": [
+  {
+   "engine": "terria",
+   "run": 0,
+   "engineInfo": {
+    "name": "terriajs",
+    "version": "terriajs 8.13.0 (terriajs-cesium 26.0.0)",
+    "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1, Unspecified Version)",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+   },
+   "results": [
+    {
+     "scenario": "initial",
+     "wallStart": 1792458128193,
+     "wallEnd": 1792458134259,
+     "firstTileMs": 1526.199999988079,
+     "settledMs": 6655.299999952316,
+     "tiles": {
+      "requests": 161,
+      "transferBytes": 0,
+      "durationMedianMs": 326.4000000357628,
+      "durationP95Ms": 997.3000000119209
+     },
+     "memory": {
+      "jsHeapPeakMB": 180.46301937103271,
+      "jsHeapEndMB": 180.46301937103271
+     },
+     "extra": {
+      "gpuMemoryMB": 72.43282699584961,
+      "maxSSE": 16
+     },
+     "network": {
+      "tileRequests": 161,
+      "tileBytes": 80604972,
+      "tileMedianMs": 326.44,
+      "tileP95Ms": 997.329,
+      "firstTileMs": 1536.111083984375,
+      "lastTileMs": 6465.105712890625
+     },
+     "process": {
+      "rendererPeakMB": 1402.953125,
+      "gpuPeakMB": 265.046875,
+      "totalPeakMB": 2168.78125
+     },
+     "drawnFraction": 0.44405864197530864,
+     "blank": false
+    },
+    {
+     "scenario": "orbit",
+     "wallStart": 1792458153927,
+     "wallEnd": 1792458185005,
+     "frames": 2629,
+     "fpsMean": 87.65931613728772,
+     "frameP95Ms": 21.30000001192093,
+     "slowFrameRatio": 0,
+     "mainThreadFps": 87.65614792884554,
+     "settleAfterMs": 3.700000047683716,
+     "tiles": {
+      "requests": 200,
+      "transferBytes": 0,
+      "durationMedianMs": 61.39999997615814,
+      "durationP95Ms": 150.9000000357628
+     },
+     "memory": {
+      "jsHeapPeakMB": 321.5650997161865,
+      "jsHeapEndMB": 321.5650997161865
+     },
+     "extra": {
+      "gpuMemoryMB": 187.96171379089355,
+      "maxSSE": 16
+     },
+     "network": {
+      "tileRequests": 200,
+      "tileBytes": 37128016,
+      "tileMedianMs": 61.526,
+      "tileP95Ms": 151.032,
+      "firstTileMs": null,
+      "lastTileMs": 34986.81884765625
+     },
+     "process": {
+      "rendererPeakMB": 1764.53125,
+      "gpuPeakMB": 410.40625,
+      "totalPeakMB": 2724.8125
+     }
+    },
+    {
+     "scenario": "zoom",
+     "wallStart": 1792458197793,
+     "wallEnd": 1792458218833,
+     "frames": 1984,
+     "fpsMean": 99.21846073796833,
+     "frameP95Ms": 19.69999998807907,
+     "slowFrameRatio": 0,
+     "mainThreadFps": 99.21329108212221,
+     "settleAfterMs": 7.5,
+     "tiles": {
+      "requests": 188,
+      "transferBytes": 0,
+      "durationMedianMs": 144.30000001192093,
+      "durationP95Ms": 1045.3999999761581
+     },
+     "memory": {
+      "jsHeapPeakMB": 264.3198118209839,
+      "jsHeapEndMB": 116.60595607757568
+     },
+     "extra": {
+      "gpuMemoryMB": 147.390962600708,
+      "maxSSE": 16
+     },
+     "network": {
+      "tileRequests": 178,
+      "tileBytes": 75370100,
+      "tileMedianMs": 140.612,
+      "tileP95Ms": 1083.436,
+      "firstTileMs": null,
+      "lastTileMs": 16963.660888671875
+     },
+     "process": {
+      "rendererPeakMB": 1685.578125,
+      "gpuPeakMB": 363.3125,
+      "totalPeakMB": 2588.484375
+     }
+    }
+   ],
+   "allMemoryMB": [
+    null,
+    null,
+    null
+   ],
+   "system": {
+    "before": {
+     "freeMB": 3738.109375,
+     "swapUsedMB": 602.88
+    },
+    "end": {
+     "freeMB": 871.859375,
+     "swapUsedMB": 602.88
+    },
+    "swapGrewMB": 0
+   },
+   "failedTiles": 0,
+   "abortedTiles": 10,
+   "failedTileUrls": [
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data52.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data169.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data129.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data130.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data186.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data189.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data115.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data116.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data118.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data117.b3dm",
+     "error": "net::ERR_ABORTED"
+    }
+   ],
+   "errors": []
+  },
+  {
+   "engine": "terria",
+   "run": 1,
+   "engineInfo": {
+    "name": "terriajs",
+    "version": "terriajs 8.13.0 (terriajs-cesium 26.0.0)",
+    "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1, Unspecified Version)",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+   },
+   "results": [
+    {
+     "scenario": "initial",
+     "wallStart": 1792458223978,
+     "wallEnd": 1792458230048,
+     "firstTileMs": 1548,
+     "settledMs": 6620.099999964237,
+     "tiles": {
+      "requests": 161,
+      "transferBytes": 0,
+      "durationMedianMs": 318.5,
+      "durationP95Ms": 798.8999999761581
+     },
+     "memory": {
+      "jsHeapPeakMB": 172.70752239227295,
+      "jsHeapEndMB": 172.70752239227295
+     },
+     "extra": {
+      "gpuMemoryMB": 72.43282699584961,
+      "maxSSE": 16
+     },
+     "network": {
+      "tileRequests": 161,
+      "tileBytes": 80604982,
+      "tileMedianMs": 318.629,
+      "tileP95Ms": 799.085,
+      "firstTileMs": 1551.611083984375,
+      "lastTileMs": 6404.975830078125
+     },
+     "process": {
+      "rendererPeakMB": 1368.8125,
+      "gpuPeakMB": 266.03125,
+      "totalPeakMB": 2130.84375
+     },
+     "drawnFraction": 0.44405864197530864,
+     "blank": false
+    },
+    {
+     "scenario": "orbit",
+     "wallStart": 1792458250556,
+     "wallEnd": 1792458281661,
+     "frames": 2495,
+     "fpsMean": 83.18019150798199,
+     "frameP95Ms": 22.200000047683716,
+     "slowFrameRatio": 0,
+     "mainThreadFps": 83.18419500298249,
+     "settleAfterMs": 5.699999988079071,
+     "tiles": {
+      "requests": 200,
+      "transferBytes": 0,
+      "durationMedianMs": 82.69999998807907,
+      "durationP95Ms": 170.89999997615814
+     },
+     "memory": {
+      "jsHeapPeakMB": 324.4978322982788,
+      "jsHeapEndMB": 311.62249279022217
+     },
+     "extra": {
+      "gpuMemoryMB": 187.96171379089355,
+      "maxSSE": 16
+     },
+     "network": {
+      "tileRequests": 200,
+      "tileBytes": 37128028,
+      "tileMedianMs": 82.777,
+      "tileP95Ms": 170.968,
+      "firstTileMs": null,
+      "lastTileMs": 35394.716796875
+     },
+     "process": {
+      "rendererPeakMB": 1776.296875,
+      "gpuPeakMB": 412.84375,
+      "totalPeakMB": 2712.125
+     }
+    },
+    {
+     "scenario": "zoom",
+     "wallStart": 1792458295482,
+     "wallEnd": 1792458316561,
+     "frames": 1969,
+     "fpsMean": 98.50934537330565,
+     "frameP95Ms": 19.799999952316284,
+     "slowFrameRatio": 0,
+     "mainThreadFps": 98.49950750263861,
+     "settleAfterMs": 0.19999998807907104,
+     "tiles": {
+      "requests": 194,
+      "transferBytes": 0,
+      "durationMedianMs": 191.19999998807907,
+      "durationP95Ms": 932
+     },
+     "memory": {
+      "jsHeapPeakMB": 278.06923389434814,
+      "jsHeapEndMB": 113.36287212371826
+     },
+     "extra": {
+      "gpuMemoryMB": 142.17767238616943,
+      "maxSSE": 16
+     },
+     "network": {
+      "tileRequests": 176,
+      "tileBytes": 69155862,
+      "tileMedianMs": 191.366,
+      "tileP95Ms": 985.745,
+      "firstTileMs": null,
+      "lastTileMs": 18187.885986328125
+     },
+     "process": {
+      "rendererPeakMB": 1706.4375,
+      "gpuPeakMB": 354.21875,
+      "totalPeakMB": 2586.875
+     }
+    }
+   ],
+   "allMemoryMB": [
+    null,
+    null,
+    null
+   ],
+   "system": {
+    "before": {
+     "freeMB": 3654.0625,
+     "swapUsedMB": 602.88
+    },
+    "end": {
+     "freeMB": 662.875,
+     "swapUsedMB": 602.88
+    },
+    "swapGrewMB": 0
+   },
+   "failedTiles": 0,
+   "abortedTiles": 18,
+   "failedTileUrls": [
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data166.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data165.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data164.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data171.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data168.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data169.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data129.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data186.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data185.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data184.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data113.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data309.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data308.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data135.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data137.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data116.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data117.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data118.b3dm",
+     "error": "net::ERR_ABORTED"
+    }
+   ],
+   "errors": []
+  },
+  {
+   "engine": "terria",
+   "run": 2,
+   "engineInfo": {
+    "name": "terriajs",
+    "version": "terriajs 8.13.0 (terriajs-cesium 26.0.0)",
+    "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1, Unspecified Version)",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+   },
+   "results": [
+    {
+     "scenario": "initial",
+     "wallStart": 1792458321564,
+     "wallEnd": 1792458332530,
+     "firstTileMs": 1810.699999988079,
+     "settledMs": 11718,
+     "tiles": {
+      "requests": 161,
+      "transferBytes": 0,
+      "durationMedianMs": 503.10000002384186,
+      "durationP95Ms": 4601.200000047684
+     },
+     "memory": {
+      "jsHeapPeakMB": 293.2289934158325,
+      "jsHeapEndMB": 293.2289934158325
+     },
+     "extra": {
+      "gpuMemoryMB": 72.43282699584961,
+      "maxSSE": 16
+     },
+     "network": {
+      "tileRequests": 161,
+      "tileBytes": 80604908,
+      "tileMedianMs": 503.139,
+      "tileP95Ms": 4601.181,
+      "firstTileMs": 1816.59375,
+      "lastTileMs": 11589.2109375
+     },
+     "process": {
+      "rendererPeakMB": 1465.015625,
+      "gpuPeakMB": 262.4375,
+      "totalPeakMB": 2233.25
+     },
+     "drawnFraction": 0.44405864197530864,
+     "blank": false
+    },
+    {
+     "scenario": "orbit",
+     "wallStart": 1792458351675,
+     "wallEnd": 1792458382731,
+     "frames": 2572,
+     "fpsMean": 85.73372193066012,
+     "frameP95Ms": 21.5,
+     "slowFrameRatio": 0.00038895371450797355,
+     "mainThreadFps": 85.73408771323344,
+     "settleAfterMs": 11.5,
+     "tiles": {
+      "requests": 200,
+      "transferBytes": 0,
+      "durationMedianMs": 95.19999998807907,
+      "durationP95Ms": 212.80000001192093
+     },
+     "memory": {
+      "jsHeapPeakMB": 347.7511730194092,
+      "jsHeapEndMB": 328.4743404388428
+     },
+     "extra": {
+      "gpuMemoryMB": 187.96171379089355,
+      "maxSSE": 16
+     },
+     "network": {
+      "tileRequests": 200,
+      "tileBytes": 37128003,
+      "tileMedianMs": 95.283,
+      "tileP95Ms": 212.884,
+      "firstTileMs": null,
+      "lastTileMs": 34064.013916015625
+     },
+     "process": {
+      "rendererPeakMB": 1789.53125,
+      "gpuPeakMB": 409.375,
+      "totalPeakMB": 2741.015625
+     }
+    },
+    {
+     "scenario": "zoom",
+     "wallStart": 1792458395230,
+     "wallEnd": 1792458416293,
+     "frames": 1965,
+     "fpsMean": 98.27813111411857,
+     "frameP95Ms": 18.900000035762787,
+     "slowFrameRatio": 0,
+     "mainThreadFps": 98.26462473515392,
+     "settleAfterMs": 7.199999988079071,
+     "tiles": {
+      "requests": 197,
+      "transferBytes": 0,
+      "durationMedianMs": 152.89999997615814,
+      "durationP95Ms": 941.8000000119209
+     },
+     "memory": {
+      "jsHeapPeakMB": 308.7261610031128,
+      "jsHeapEndMB": 141.8958034515381
+     },
+     "extra": {
+      "gpuMemoryMB": 148.84001445770264,
+      "maxSSE": 16
+     },
+     "network": {
+      "tileRequests": 185,
+      "tileBytes": 77729718,
+      "tileMedianMs": 151.379,
+      "tileP95Ms": 941.92,
+      "firstTileMs": null,
+      "lastTileMs": 17028.2080078125
+     },
+     "process": {
+      "rendererPeakMB": 1747.15625,
+      "gpuPeakMB": 367.171875,
+      "totalPeakMB": 2628.421875
+     }
+    }
+   ],
+   "allMemoryMB": [
+    null,
+    null,
+    null
+   ],
+   "system": {
+    "before": {
+     "freeMB": 3154.53125,
+     "swapUsedMB": 602.88
+    },
+    "end": {
+     "freeMB": 168.328125,
+     "swapUsedMB": 602.88
+    },
+    "swapGrewMB": 0
+   },
+   "failedTiles": 0,
+   "abortedTiles": 12,
+   "failedTileUrls": [
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data169.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data168.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data171.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data130.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data184.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data135.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data137.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data190.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data189.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data118.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data117.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data116.b3dm",
+     "error": "net::ERR_ABORTED"
+    }
+   ],
+   "errors": []
+  },
+  {
+   "engine": "terria",
+   "run": 3,
+   "engineInfo": {
+    "name": "terriajs",
+    "version": "terriajs 8.13.0 (terriajs-cesium 26.0.0)",
+    "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1, Unspecified Version)",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+   },
+   "results": [
+    {
+     "scenario": "initial",
+     "wallStart": 1792458421353,
+     "wallEnd": 1792458428566,
+     "firstTileMs": 1762.699999988079,
+     "settledMs": 7958.899999976158,
+     "tiles": {
+      "requests": 161,
+      "transferBytes": 0,
+      "durationMedianMs": 394.9000000357628,
+      "durationP95Ms": 1819.5
+     },
+     "memory": {
+      "jsHeapPeakMB": 171.5097360610962,
+      "jsHeapEndMB": 171.5097360610962
+     },
+     "extra": {
+      "gpuMemoryMB": 72.43282699584961,
+      "maxSSE": 16
+     },
+     "network": {
+      "tileRequests": 161,
+      "tileBytes": 80604940,
+      "tileMedianMs": 395.148,
+      "tileP95Ms": 1819.559,
+      "firstTileMs": 1767.8837890625,
+      "lastTileMs": 7779.68505859375
+     },
+     "process": {
+      "rendererPeakMB": 1416.765625,
+      "gpuPeakMB": 272.140625,
+      "totalPeakMB": 2201.046875
+     },
+     "drawnFraction": 0.44405864197530864,
+     "blank": false
+    },
+    {
+     "scenario": "orbit",
+     "wallStart": 1792458447397,
+     "wallEnd": 1792458478437,
+     "frames": 2531,
+     "fpsMean": 84.36848686952897,
+     "frameP95Ms": 22,
+     "slowFrameRatio": 0,
+     "mainThreadFps": 84.36625349860057,
+     "settleAfterMs": 12,
+     "tiles": {
+      "requests": 200,
+      "transferBytes": 0,
+      "durationMedianMs": 67.30000001192093,
+      "durationP95Ms": 159.5999999642372
+     },
+     "memory": {
+      "jsHeapPeakMB": 383.3439607620239,
+      "jsHeapEndMB": 205.95601272583008
+     },
+     "extra": {
+      "gpuMemoryMB": 187.96171379089355,
+      "maxSSE": 16
+     },
+     "network": {
+      "tileRequests": 200,
+      "tileBytes": 37127989,
+      "tileMedianMs": 67.394,
+      "tileP95Ms": 159.576,
+      "firstTileMs": null,
+      "lastTileMs": 34078.371826171875
+     },
+     "process": {
+      "rendererPeakMB": 1838.90625,
+      "gpuPeakMB": 409.21875,
+      "totalPeakMB": 2774.96875
+     }
+    },
+    {
+     "scenario": "zoom",
+     "wallStart": 1792458490263,
+     "wallEnd": 1792458511307,
+     "frames": 1940,
+     "fpsMean": 97.03879049335927,
+     "frameP95Ms": 20.19999998807907,
+     "slowFrameRatio": 0,
+     "mainThreadFps": 97.03447448414038,
+     "settleAfterMs": 3.299999952316284,
+     "tiles": {
+      "requests": 189,
+      "transferBytes": 0,
+      "durationMedianMs": 107.40000003576279,
+      "durationP95Ms": 1024.2000000476837
+     },
+     "memory": {
+      "jsHeapPeakMB": 260.2115259170532,
+      "jsHeapEndMB": 183.7161283493042
+     },
+     "extra": {
+      "gpuMemoryMB": 145.9902811050415,
+      "maxSSE": 16
+     },
+     "network": {
+      "tileRequests": 178,
+      "tileBytes": 74142211,
+      "tileMedianMs": 99.044,
+      "tileP95Ms": 1024.235,
+      "firstTileMs": null,
+      "lastTileMs": 16442.4208984375
+     },
+     "process": {
+      "rendererPeakMB": 1677.5625,
+      "gpuPeakMB": 359.4375,
+      "totalPeakMB": 2556
+     }
+    }
+   ],
+   "allMemoryMB": [
+    null,
+    null,
+    null
+   ],
+   "system": {
+    "before": {
+     "freeMB": 2810.84375,
+     "swapUsedMB": 602.88
+    },
+    "end": {
+     "freeMB": 312.15625,
+     "swapUsedMB": 602.88
+    },
+    "swapGrewMB": 0
+   },
+   "failedTiles": 0,
+   "abortedTiles": 11,
+   "failedTileUrls": [
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data83.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data169.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data130.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data132.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data186.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data189.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data192.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data115.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data116.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data118.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data117.b3dm",
+     "error": "net::ERR_ABORTED"
+    }
+   ],
+   "errors": []
+  },
+  {
+   "engine": "terria",
+   "run": 4,
+   "engineInfo": {
+    "name": "terriajs",
+    "version": "terriajs 8.13.0 (terriajs-cesium 26.0.0)",
+    "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1, Unspecified Version)",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+   },
+   "results": [
+    {
+     "scenario": "initial",
+     "wallStart": 1792458515875,
+     "wallEnd": 1792458521534,
+     "firstTileMs": 1265.699999988079,
+     "settledMs": 5943,
+     "tiles": {
+      "requests": 161,
+      "transferBytes": 0,
+      "durationMedianMs": 345.4000000357628,
+      "durationP95Ms": 844.7999999523163
+     },
+     "memory": {
+      "jsHeapPeakMB": 323.2888069152832,
+      "jsHeapEndMB": 170.2808656692505
+     },
+     "extra": {
+      "gpuMemoryMB": 72.43282699584961,
+      "maxSSE": 16
+     },
+     "network": {
+      "tileRequests": 161,
+      "tileBytes": 80604931,
+      "tileMedianMs": 345.412,
+      "tileP95Ms": 844.849,
+      "firstTileMs": 1265.184814453125,
+      "lastTileMs": 5793.755126953125
+     },
+     "process": {
+      "rendererPeakMB": 1542.15625,
+      "gpuPeakMB": 257.4375,
+      "totalPeakMB": 2299.53125
+     },
+     "drawnFraction": 0.44405864197530864,
+     "blank": false
+    },
+    {
+     "scenario": "orbit",
+     "wallStart": 1792458539393,
+     "wallEnd": 1792458570405,
+     "frames": 2511,
+     "fpsMean": 83.71522149523369,
+     "frameP95Ms": 22.19999998807907,
+     "slowFrameRatio": 0,
+     "mainThreadFps": 83.72217037728302,
+     "settleAfterMs": 4,
+     "tiles": {
+      "requests": 200,
+      "transferBytes": 0,
+      "durationMedianMs": 57,
+      "durationP95Ms": 133.9000000357628
+     },
+     "memory": {
+      "jsHeapPeakMB": 417.45131397247314,
+      "jsHeapEndMB": 417.45131397247314
+     },
+     "extra": {
+      "gpuMemoryMB": 187.96171379089355,
+      "maxSSE": 16
+     },
+     "network": {
+      "tileRequests": 200,
+      "tileBytes": 37128002,
+      "tileMedianMs": 57.05,
+      "tileP95Ms": 133.961,
+      "firstTileMs": null,
+      "lastTileMs": 33281.19189453125
+     },
+     "process": {
+      "rendererPeakMB": 1817.546875,
+      "gpuPeakMB": 407.453125,
+      "totalPeakMB": 2750.71875
+     }
+    },
+    {
+     "scenario": "zoom",
+     "wallStart": 1792458581793,
+     "wallEnd": 1792458602840,
+     "frames": 1981,
+     "fpsMean": 99.09860311027192,
+     "frameP95Ms": 19.5,
+     "slowFrameRatio": 0,
+     "mainThreadFps": 99.09157721599571,
+     "settleAfterMs": 1.800000011920929,
+     "tiles": {
+      "requests": 188,
+      "transferBytes": 0,
+      "durationMedianMs": 134.4000000357628,
+      "durationP95Ms": 1039.199999988079
+     },
+     "memory": {
+      "jsHeapPeakMB": 257.2409543991089,
+      "jsHeapEndMB": 119.29563808441162
+     },
+     "extra": {
+      "gpuMemoryMB": 146.68832969665527,
+      "maxSSE": 16
+     },
+     "network": {
+      "tileRequests": 173,
+      "tileBytes": 74360933,
+      "tileMedianMs": 121.562,
+      "tileP95Ms": 1046.658,
+      "firstTileMs": null,
+      "lastTileMs": 16482.819091796875
+     },
+     "process": {
+      "rendererPeakMB": 1691.671875,
+      "gpuPeakMB": 355.75,
+      "totalPeakMB": 2578.0625
+     }
+    }
+   ],
+   "allMemoryMB": [
+    null,
+    null,
+    null
+   ],
+   "system": {
+    "before": {
+     "freeMB": 2905.5,
+     "swapUsedMB": 602.88
+    },
+    "end": {
+     "freeMB": 170.65625,
+     "swapUsedMB": 602.88
+    },
+    "swapGrewMB": 0
+   },
+   "failedTiles": 0,
+   "abortedTiles": 15,
+   "failedTileUrls": [
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data82.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data83.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data52.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data130.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data186.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data184.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data113.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data190.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data189.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data135.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data115.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data116.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data117.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data118.b3dm",
+     "error": "net::ERR_ABORTED"
+    },
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data585.b3dm",
+     "error": "net::ERR_ABORTED"
+    }
+   ],
+   "errors": []
+  }
+ ]
+}

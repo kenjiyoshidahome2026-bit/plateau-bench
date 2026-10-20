@@ -1,0 +1,757 @@
+{
+ "meta": {
+  "date": "2026-10-20T01:17:33.193Z",
+  "host": {
+   "platform": "darwin",
+   "release": "25.5.0",
+   "cpus": "Apple M1",
+   "cores": 8,
+   "memGB": 16
+  },
+  "args": {
+   "BASE": "http://localhost:4173",
+   "TERRIA": "http://localhost:3002",
+   "QUERY": "",
+   "RUNS": 5,
+   "ENGINES": [
+    "terria"
+   ],
+   "SCENARIOS": [
+    "initial",
+    "orbit",
+    "zoom"
+   ],
+   "W": 1920,
+   "H": 1080,
+   "vsync": true,
+   "headless": false
+  }
+ },
+ "runs": [
+  {
+   "engine": "terria",
+   "run": 0,
+   "engineInfo": {
+    "name": "terriajs",
+    "version": "terriajs 8.13.0 (terriajs-cesium 26.0.0)",
+    "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1, Unspecified Version)",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+   },
+   "results": [
+    {
+     "scenario": "initial",
+     "wallStart": 1792458608092,
+     "wallEnd": 1792458613472,
+     "firstTileMs": 1021.1000000238419,
+     "settledMs": 5418.800000011921,
+     "tiles": {
+      "requests": 161,
+      "transferBytes": 0,
+      "durationMedianMs": 350.0999999642372,
+      "durationP95Ms": 1103.5999999642372
+     },
+     "memory": {
+      "jsHeapPeakMB": 171.2012529373169,
+      "jsHeapEndMB": 91.64898777008057
+     },
+     "extra": {
+      "gpuMemoryMB": 72.43282699584961,
+      "maxSSE": 16
+     },
+     "network": {
+      "tileRequests": 161,
+      "tileBytes": 80604948,
+      "tileMedianMs": 350.203,
+      "tileP95Ms": 1103.656,
+      "firstTileMs": 1014.26611328125,
+      "lastTileMs": 5254.7880859375
+     },
+     "process": {
+      "rendererPeakMB": 1157.734375,
+      "gpuPeakMB": 256.515625,
+      "totalPeakMB": 1906.453125
+     },
+     "drawnFraction": 0.44405864197530864,
+     "blank": false
+    },
+    {
+     "scenario": "orbit",
+     "wallStart": 1792458630314,
+     "wallEnd": 1792458661363,
+     "frames": 1749,
+     "fpsMean": 58.281236975910645,
+     "frameP95Ms": 19.400000035762787,
+     "slowFrameRatio": 0.0005720823798627002,
+     "mainThreadFps": 58.300490723605364,
+     "settleAfterMs": 16.899999976158142,
+     "tiles": {
+      "requests": 200,
+      "transferBytes": 0,
+      "durationMedianMs": 57.89999997615814,
+      "durationP95Ms": 140.19999998807907
+     },
+     "memory": {
+      "jsHeapPeakMB": 310.3406820297241,
+      "jsHeapEndMB": 198.5614414215088
+     },
+     "extra": {
+      "gpuMemoryMB": 187.96171379089355,
+      "maxSSE": 16
+     },
+     "network": {
+      "tileRequests": 200,
+      "tileBytes": 37128016,
+      "tileMedianMs": 57.907,
+      "tileP95Ms": 140.254,
+      "firstTileMs": null,
+      "lastTileMs": 32597.927978515625
+     },
+     "process": {
+      "rendererPeakMB": 1576.84375,
+      "gpuPeakMB": 396.1875,
+      "totalPeakMB": 2460.5625
+     }
+    },
+    {
+     "scenario": "zoom",
+     "wallStart": 1792458672094,
+     "wallEnd": 1792458693102,
+     "frames": 1201,
+     "fpsMean": 60.014703602489924,
+     "frameP95Ms": 17.80000001192093,
+     "slowFrameRatio": 0,
+     "mainThreadFps": 60.085879818278514,
+     "settleAfterMs": 4.699999988079071,
+     "tiles": {
+      "requests": 37,
+      "transferBytes": 0,
+      "durationMedianMs": 38,
+      "durationP95Ms": 164.5999999642372
+     },
+     "memory": {
+      "jsHeapPeakMB": 191.2595624923706,
+      "jsHeapEndMB": 191.2595624923706
+     },
+     "extra": {
+      "gpuMemoryMB": 92.8715648651123,
+      "maxSSE": 16
+     },
+     "network": {
+      "tileRequests": 37,
+      "tileBytes": 5759276,
+      "tileMedianMs": 38.009,
+      "tileP95Ms": 164.682,
+      "firstTileMs": null,
+      "lastTileMs": 15412.882080078125
+     },
+     "process": {
+      "rendererPeakMB": 1291.65625,
+      "gpuPeakMB": 287.53125,
+      "totalPeakMB": 2069.046875
+     }
+    }
+   ],
+   "allMemoryMB": [
+    null,
+    null,
+    null
+   ],
+   "system": {
+    "before": {
+     "freeMB": 2634.53125,
+     "swapUsedMB": 602.88
+    },
+    "end": {
+     "freeMB": 483.609375,
+     "swapUsedMB": 602.88
+    },
+    "swapGrewMB": 0
+   },
+   "failedTiles": 0,
+   "abortedTiles": 0,
+   "failedTileUrls": [],
+   "errors": []
+  },
+  {
+   "engine": "terria",
+   "run": 1,
+   "engineInfo": {
+    "name": "terriajs",
+    "version": "terriajs 8.13.0 (terriajs-cesium 26.0.0)",
+    "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1, Unspecified Version)",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+   },
+   "results": [
+    {
+     "scenario": "initial",
+     "wallStart": 1792458697469,
+     "wallEnd": 1792458702479,
+     "firstTileMs": 1105,
+     "settledMs": 5169.899999976158,
+     "tiles": {
+      "requests": 161,
+      "transferBytes": 0,
+      "durationMedianMs": 316,
+      "durationP95Ms": 979.6999999880791
+     },
+     "memory": {
+      "jsHeapPeakMB": 191.51775646209717,
+      "jsHeapEndMB": 191.51775646209717
+     },
+     "extra": {
+      "gpuMemoryMB": 72.43282699584961,
+      "maxSSE": 16
+     },
+     "network": {
+      "tileRequests": 161,
+      "tileBytes": 80604944,
+      "tileMedianMs": 316.18,
+      "tileP95Ms": 979.799,
+      "firstTileMs": 1107.925048828125,
+      "lastTileMs": 5060.89990234375
+     },
+     "process": {
+      "rendererPeakMB": 1171.578125,
+      "gpuPeakMB": 259.953125,
+      "totalPeakMB": 1925.6875
+     },
+     "drawnFraction": 0.44405864197530864,
+     "blank": false
+    },
+    {
+     "scenario": "orbit",
+     "wallStart": 1792458719185,
+     "wallEnd": 1792458750210,
+     "frames": 1782,
+     "fpsMean": 59.371416379929876,
+     "frameP95Ms": 18.400000035762787,
+     "slowFrameRatio": 0,
+     "mainThreadFps": 59.40481902025083,
+     "settleAfterMs": 14.399999976158142,
+     "tiles": {
+      "requests": 200,
+      "transferBytes": 0,
+      "durationMedianMs": 49.5,
+      "durationP95Ms": 129.80000001192093
+     },
+     "memory": {
+      "jsHeapPeakMB": 272.16912746429443,
+      "jsHeapEndMB": 242.16989421844482
+     },
+     "extra": {
+      "gpuMemoryMB": 187.96171379089355,
+      "maxSSE": 16
+     },
+     "network": {
+      "tileRequests": 200,
+      "tileBytes": 37127985,
+      "tileMedianMs": 49.736,
+      "tileP95Ms": 129.992,
+      "firstTileMs": null,
+      "lastTileMs": 32410.130859375
+     },
+     "process": {
+      "rendererPeakMB": 1566.59375,
+      "gpuPeakMB": 398.28125,
+      "totalPeakMB": 2507.65625
+     }
+    },
+    {
+     "scenario": "zoom",
+     "wallStart": 1792458760954,
+     "wallEnd": 1792458781974,
+     "frames": 1201,
+     "fpsMean": 60.00930144179502,
+     "frameP95Ms": 18.099999964237213,
+     "slowFrameRatio": 0,
+     "mainThreadFps": 60.0741681076421,
+     "settleAfterMs": 8.700000047683716,
+     "tiles": {
+      "requests": 41,
+      "transferBytes": 0,
+      "durationMedianMs": 133.70000004768372,
+      "durationP95Ms": 202.89999997615814
+     },
+     "memory": {
+      "jsHeapPeakMB": 197.03977966308594,
+      "jsHeapEndMB": 167.85220623016357
+     },
+     "extra": {
+      "gpuMemoryMB": 93.46715831756592,
+      "maxSSE": 16
+     },
+     "network": {
+      "tileRequests": 41,
+      "tileBytes": 6591821,
+      "tileMedianMs": 133.822,
+      "tileP95Ms": 202.906,
+      "firstTileMs": null,
+      "lastTileMs": 15227.016845703125
+     },
+     "process": {
+      "rendererPeakMB": 1283.0625,
+      "gpuPeakMB": 285.515625,
+      "totalPeakMB": 2064.5
+     }
+    }
+   ],
+   "allMemoryMB": [
+    null,
+    null,
+    null
+   ],
+   "system": {
+    "before": {
+     "freeMB": 2475.125,
+     "swapUsedMB": 602.88
+    },
+    "end": {
+     "freeMB": 514.421875,
+     "swapUsedMB": 602.88
+    },
+    "swapGrewMB": 0
+   },
+   "failedTiles": 0,
+   "abortedTiles": 0,
+   "failedTileUrls": [],
+   "errors": []
+  },
+  {
+   "engine": "terria",
+   "run": 2,
+   "engineInfo": {
+    "name": "terriajs",
+    "version": "terriajs 8.13.0 (terriajs-cesium 26.0.0)",
+    "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1, Unspecified Version)",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+   },
+   "results": [
+    {
+     "scenario": "initial",
+     "wallStart": 1792458786230,
+     "wallEnd": 1792458791402,
+     "firstTileMs": 1012.8000000119209,
+     "settledMs": 5189.699999988079,
+     "tiles": {
+      "requests": 161,
+      "transferBytes": 0,
+      "durationMedianMs": 342.30000001192093,
+      "durationP95Ms": 1012.9000000357628
+     },
+     "memory": {
+      "jsHeapPeakMB": 193.32849407196045,
+      "jsHeapEndMB": 193.32849407196045
+     },
+     "extra": {
+      "gpuMemoryMB": 72.43282699584961,
+      "maxSSE": 16
+     },
+     "network": {
+      "tileRequests": 161,
+      "tileBytes": 80604982,
+      "tileMedianMs": 342.339,
+      "tileP95Ms": 1013.011,
+      "firstTileMs": 1017.01611328125,
+      "lastTileMs": 5023.6689453125
+     },
+     "process": {
+      "rendererPeakMB": 1187.6875,
+      "gpuPeakMB": 258.3125,
+      "totalPeakMB": 1939.890625
+     },
+     "drawnFraction": 0.44405864197530864,
+     "blank": false
+    },
+    {
+     "scenario": "orbit",
+     "wallStart": 1792458808025,
+     "wallEnd": 1792458839035,
+     "frames": 1783,
+     "fpsMean": 59.43526492387846,
+     "frameP95Ms": 18.399999976158142,
+     "slowFrameRatio": 0,
+     "mainThreadFps": 59.458540666061715,
+     "settleAfterMs": 4.200000047683716,
+     "tiles": {
+      "requests": 199,
+      "transferBytes": 0,
+      "durationMedianMs": 55.69999998807907,
+      "durationP95Ms": 180.20000004768372
+     },
+     "memory": {
+      "jsHeapPeakMB": 320.89666652679443,
+      "jsHeapEndMB": 227.76387882232666
+     },
+     "extra": {
+      "gpuMemoryMB": 187.9583969116211,
+      "maxSSE": 16
+     },
+     "network": {
+      "tileRequests": 199,
+      "tileBytes": 37111000,
+      "tileMedianMs": 55.81,
+      "tileP95Ms": 180.206,
+      "firstTileMs": null,
+      "lastTileMs": 32409.687744140625
+     },
+     "process": {
+      "rendererPeakMB": 1583.875,
+      "gpuPeakMB": 399.59375,
+      "totalPeakMB": 2510.421875
+     }
+    },
+    {
+     "scenario": "zoom",
+     "wallStart": 1792458850414,
+     "wallEnd": 1792458871433,
+     "frames": 1200,
+     "fpsMean": 60.0043038950966,
+     "frameP95Ms": 17.599999964237213,
+     "slowFrameRatio": 0,
+     "mainThreadFps": 60.017590501093636,
+     "settleAfterMs": 10.899999976158142,
+     "tiles": {
+      "requests": 34,
+      "transferBytes": 0,
+      "durationMedianMs": 43.700000047683716,
+      "durationP95Ms": 87.60000002384186
+     },
+     "memory": {
+      "jsHeapPeakMB": 195.5573329925537,
+      "jsHeapEndMB": 162.2786808013916
+     },
+     "extra": {
+      "gpuMemoryMB": 92.58851909637451,
+      "maxSSE": 16
+     },
+     "network": {
+      "tileRequests": 33,
+      "tileBytes": 5209953,
+      "tileMedianMs": 43.718,
+      "tileP95Ms": 87.676,
+      "firstTileMs": null,
+      "lastTileMs": 15881.669921875
+     },
+     "process": {
+      "rendererPeakMB": 1290.59375,
+      "gpuPeakMB": 284.984375,
+      "totalPeakMB": 2106.40625
+     }
+    }
+   ],
+   "allMemoryMB": [
+    null,
+    null,
+    null
+   ],
+   "system": {
+    "before": {
+     "freeMB": 2388.734375,
+     "swapUsedMB": 602.88
+    },
+    "end": {
+     "freeMB": 625.78125,
+     "swapUsedMB": 602.88
+    },
+    "swapGrewMB": 0
+   },
+   "failedTiles": 0,
+   "abortedTiles": 1,
+   "failedTileUrls": [
+    {
+     "url": "https://assets.cms.plateau.reearth.io/assets/db/070026-aa27-431b-8d53-7cc6b03244f8/13101_chiyoda-ku_pref_2023_citygml_1_op_bldg_3dtiles_13101_chiyoda-ku_lod2_no_texture/data/data382.b3dm",
+     "error": "net::ERR_ABORTED"
+    }
+   ],
+   "errors": []
+  },
+  {
+   "engine": "terria",
+   "run": 3,
+   "engineInfo": {
+    "name": "terriajs",
+    "version": "terriajs 8.13.0 (terriajs-cesium 26.0.0)",
+    "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1, Unspecified Version)",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+   },
+   "results": [
+    {
+     "scenario": "initial",
+     "wallStart": 1792458876089,
+     "wallEnd": 1792458881271,
+     "firstTileMs": 1002.3000000119209,
+     "settledMs": 5194.300000011921,
+     "tiles": {
+      "requests": 161,
+      "transferBytes": 0,
+      "durationMedianMs": 334.19999998807907,
+      "durationP95Ms": 1055.5999999642372
+     },
+     "memory": {
+      "jsHeapPeakMB": 187.2686243057251,
+      "jsHeapEndMB": 90.03949642181396
+     },
+     "extra": {
+      "gpuMemoryMB": 72.43282699584961,
+      "maxSSE": 16
+     },
+     "network": {
+      "tileRequests": 161,
+      "tileBytes": 80604765,
+      "tileMedianMs": 334.269,
+      "tileP95Ms": 1055.639,
+      "firstTileMs": 1006.9111328125,
+      "lastTileMs": 5091.650146484375
+     },
+     "process": {
+      "rendererPeakMB": 1160.953125,
+      "gpuPeakMB": 259.78125,
+      "totalPeakMB": 1928.265625
+     },
+     "drawnFraction": 0.44405864197530864,
+     "blank": false
+    },
+    {
+     "scenario": "orbit",
+     "wallStart": 1792458897985,
+     "wallEnd": 1792458929008,
+     "frames": 1794,
+     "fpsMean": 59.78121342862472,
+     "frameP95Ms": 18,
+     "slowFrameRatio": 0,
+     "mainThreadFps": 59.803232373110156,
+     "settleAfterMs": 15.099999964237213,
+     "tiles": {
+      "requests": 200,
+      "transferBytes": 0,
+      "durationMedianMs": 52.799999952316284,
+      "durationP95Ms": 134.69999998807907
+     },
+     "memory": {
+      "jsHeapPeakMB": 314.60437965393066,
+      "jsHeapEndMB": 221.20288848876953
+     },
+     "extra": {
+      "gpuMemoryMB": 187.96171379089355,
+      "maxSSE": 16
+     },
+     "network": {
+      "tileRequests": 200,
+      "tileBytes": 37128007,
+      "tileMedianMs": 52.786,
+      "tileP95Ms": 134.778,
+      "firstTileMs": null,
+      "lastTileMs": 32468.149169921875
+     },
+     "process": {
+      "rendererPeakMB": 1570.140625,
+      "gpuPeakMB": 394.59375,
+      "totalPeakMB": 2471.578125
+     }
+    },
+    {
+     "scenario": "zoom",
+     "wallStart": 1792458940067,
+     "wallEnd": 1792458961077,
+     "frames": 1201,
+     "fpsMean": 60.00870126179026,
+     "frameP95Ms": 17.80000001192093,
+     "slowFrameRatio": 0,
+     "mainThreadFps": 60.091587177759294,
+     "settleAfterMs": 2.900000035762787,
+     "tiles": {
+      "requests": 33,
+      "transferBytes": 0,
+      "durationMedianMs": 39.10000002384186,
+      "durationP95Ms": 159.5
+     },
+     "memory": {
+      "jsHeapPeakMB": 137.14895343780518,
+      "jsHeapEndMB": 133.05227756500244
+     },
+     "extra": {
+      "gpuMemoryMB": 92.58851909637451,
+      "maxSSE": 16
+     },
+     "network": {
+      "tileRequests": 33,
+      "tileBytes": 5209944,
+      "tileMedianMs": 39.217,
+      "tileP95Ms": 159.569,
+      "firstTileMs": null,
+      "lastTileMs": 15816.9228515625
+     },
+     "process": {
+      "rendererPeakMB": 1272.515625,
+      "gpuPeakMB": 292.71875,
+      "totalPeakMB": 2104.953125
+     }
+    }
+   ],
+   "allMemoryMB": [
+    null,
+    null,
+    null
+   ],
+   "system": {
+    "before": {
+     "freeMB": 2873.890625,
+     "swapUsedMB": 602.88
+    },
+    "end": {
+     "freeMB": 482.265625,
+     "swapUsedMB": 602.88
+    },
+    "swapGrewMB": 0
+   },
+   "failedTiles": 0,
+   "abortedTiles": 0,
+   "failedTileUrls": [],
+   "errors": []
+  },
+  {
+   "engine": "terria",
+   "run": 4,
+   "engineInfo": {
+    "name": "terriajs",
+    "version": "terriajs 8.13.0 (terriajs-cesium 26.0.0)",
+    "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1, Unspecified Version)",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+   },
+   "results": [
+    {
+     "scenario": "initial",
+     "wallStart": 1792458965552,
+     "wallEnd": 1792458970905,
+     "firstTileMs": 1011.1999999880791,
+     "settledMs": 5388.899999976158,
+     "tiles": {
+      "requests": 161,
+      "transferBytes": 0,
+      "durationMedianMs": 345.9000000357628,
+      "durationP95Ms": 1128.2999999523163
+     },
+     "memory": {
+      "jsHeapPeakMB": 189.34981632232666,
+      "jsHeapEndMB": 189.34981632232666
+     },
+     "extra": {
+      "gpuMemoryMB": 72.43282699584961,
+      "maxSSE": 16
+     },
+     "network": {
+      "tileRequests": 161,
+      "tileBytes": 80604803,
+      "tileMedianMs": 345.894,
+      "tileP95Ms": 1128.361,
+      "firstTileMs": 1014.464111328125,
+      "lastTileMs": 5302.118896484375
+     },
+     "process": {
+      "rendererPeakMB": 1145.53125,
+      "gpuPeakMB": 256.640625,
+      "totalPeakMB": 1923.28125
+     },
+     "drawnFraction": 0.44405864197530864,
+     "blank": false
+    },
+    {
+     "scenario": "orbit",
+     "wallStart": 1792458987567,
+     "wallEnd": 1792459018602,
+     "frames": 1796,
+     "fpsMean": 59.850889594304775,
+     "frameP95Ms": 17.69999998807907,
+     "slowFrameRatio": 0,
+     "mainThreadFps": 59.87405457635025,
+     "settleAfterMs": 13.100000023841858,
+     "tiles": {
+      "requests": 200,
+      "transferBytes": 0,
+      "durationMedianMs": 50.19999998807907,
+      "durationP95Ms": 131.5
+     },
+     "memory": {
+      "jsHeapPeakMB": 322.13316535949707,
+      "jsHeapEndMB": 249.80794143676758
+     },
+     "extra": {
+      "gpuMemoryMB": 187.96171379089355,
+      "maxSSE": 16
+     },
+     "network": {
+      "tileRequests": 200,
+      "tileBytes": 37128030,
+      "tileMedianMs": 50.232,
+      "tileP95Ms": 131.598,
+      "firstTileMs": null,
+      "lastTileMs": 32404.4970703125
+     },
+     "process": {
+      "rendererPeakMB": 1609.375,
+      "gpuPeakMB": 394.640625,
+      "totalPeakMB": 2532.65625
+     }
+    },
+    {
+     "scenario": "zoom",
+     "wallStart": 1792459029429,
+     "wallEnd": 1792459050443,
+     "frames": 1201,
+     "fpsMean": 60.005100433501084,
+     "frameP95Ms": 17.5,
+     "slowFrameRatio": 0,
+     "mainThreadFps": 60.08167508902623,
+     "settleAfterMs": 6.199999988079071,
+     "tiles": {
+      "requests": 34,
+      "transferBytes": 0,
+      "durationMedianMs": 35.5,
+      "durationP95Ms": 161.19999998807907
+     },
+     "memory": {
+      "jsHeapPeakMB": 180.75532150268555,
+      "jsHeapEndMB": 136.95835494995117
+     },
+     "extra": {
+      "gpuMemoryMB": 92.58851909637451,
+      "maxSSE": 16
+     },
+     "network": {
+      "tileRequests": 34,
+      "tileBytes": 5353036,
+      "tileMedianMs": 35.557,
+      "tileP95Ms": 161.271,
+      "firstTileMs": null,
+      "lastTileMs": 15565.6708984375
+     },
+     "process": {
+      "rendererPeakMB": 1280.859375,
+      "gpuPeakMB": 275.375,
+      "totalPeakMB": 2090.046875
+     }
+    }
+   ],
+   "allMemoryMB": [
+    null,
+    null,
+    null
+   ],
+   "system": {
+    "before": {
+     "freeMB": 2747.53125,
+     "swapUsedMB": 602.88
+    },
+    "end": {
+     "freeMB": 422.296875,
+     "swapUsedMB": 602.88
+    },
+    "swapGrewMB": 0
+   },
+   "failedTiles": 0,
+   "abortedTiles": 0,
+   "failedTileUrls": [],
+   "errors": []
+  }
+ ]
+}

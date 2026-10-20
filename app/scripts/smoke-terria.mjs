@@ -1,0 +1,10 @@
+import { chromium } from "playwright";
+const b = await chromium.launch({ executablePath: "/opt/pw-browsers/chromium", args: ["--enable-unsafe-swiftshader","--use-angle=swiftshader"] });
+const p = await b.newPage({ viewport: { width: 1280, height: 720 } });
+p.on("console", m => m.type() !== "debug" && console.log("C", m.type(), m.text().slice(0,1500)));
+p.on("pageerror", e => console.log("PE", e.message.slice(0,250)));
+await p.goto(process.argv[2]);
+const res = await p.evaluate(async (scs) => { await new Promise(r => { const t = setInterval(() => { if (window.__bench) { clearInterval(t); r(); } }, 200); }); const out = []; for (const s of scs) out.push(await Promise.race([window.__bench.run(s), new Promise(r => setTimeout(() => r("timeout " + s), 90000))])); return out; }, (process.env.SCENARIOS ?? "initial").split(","));
+console.log("== terria", JSON.stringify(res));
+await p.screenshot({ path: "smoke-terria.png" });
+await b.close();

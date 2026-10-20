@@ -1,0 +1,4 @@
+engine,scenario,settled_ms,fps_mean,frame_p95_ms,slow_frame_ratio,main_thread_fps,tile_requests,tile_mb,tile_median_ms,tile_p95_ms,runs
+ortho-earth,initial,6322,,,,,110,69.06,221.74,705.84,5
+ortho-earth,orbit,6,59.82,19,0,59.99,365,81.74,40.61,199.63,5
+ortho-earth,zoom,3,59.85,19,0,59.99,240,126.54,156.99,630.47,5

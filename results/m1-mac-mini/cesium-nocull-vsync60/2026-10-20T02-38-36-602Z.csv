@@ -1,0 +1,4 @@
+engine,version,scenario,drawn_fraction,settled_ms,settle_after_ms,first_tile_ms,fps_mean,frame_p95_ms,slow_frame_ratio,main_thread_fps,tile_requests,tile_mb,tile_median_ms,tile_p95_ms,renderer_peak_mb,gpu_peak_mb,js_heap_peak_mb,runs
+cesium,cesium 1.146.0 (no-cull),initial,0.24,4987.4,,737.21,,,,,161,76.87,349.34,1090.3,1080.31,247.31,147.09,5
+cesium,cesium 1.146.0 (no-cull),orbit,0.24,14.3,14.3,,60,17.9,0,60,200,35.41,56.54,145.37,1391.94,378.34,177.11,5
+cesium,cesium 1.146.0 (no-cull),zoom,0.24,6.8,6.8,,60.01,18.2,0,60.03,350,128.71,179.96,779.4,1482.73,377.64,256.77,5

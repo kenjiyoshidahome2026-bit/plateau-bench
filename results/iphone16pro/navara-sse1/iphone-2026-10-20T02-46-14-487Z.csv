@@ -1,0 +1,4 @@
+engine,scenario,settled_ms,fps_mean,frame_p95_ms,slow_frame_ratio,main_thread_fps,tile_requests,tile_mb,tile_median_ms,tile_p95_ms,runs
+navara,initial,8457,,,,,121,63.9,177.72,440.45,5
+navara,orbit,2080,59.6,20,0,59.62,299,112.47,95.16,414.65,5
+navara,zoom,10,59.79,21,0.01,59.82,173,75.66,142.98,396.28,5

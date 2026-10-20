@@ -1,0 +1,225 @@
+{
+ "meta": {
+  "date": "2026-10-20T00:14:06.292Z",
+  "host": {
+   "platform": "darwin",
+   "release": "25.5.0",
+   "cpus": "Apple M1",
+   "cores": 8,
+   "memGB": 16
+  },
+  "args": {
+   "BASE": "http://localhost:4173",
+   "TERRIA": "http://localhost:3002",
+   "QUERY": "",
+   "RUNS": 3,
+   "ENGINES": [
+    "cesium"
+   ],
+   "SCENARIOS": [
+    "initial"
+   ],
+   "W": 1920,
+   "H": 1080,
+   "vsync": false,
+   "headless": false
+  }
+ },
+ "runs": [
+  {
+   "engine": "cesium",
+   "run": 0,
+   "engineInfo": {
+    "name": "cesium",
+    "version": "cesium 1.146.0",
+    "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1, Unspecified Version)",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+   },
+   "results": [
+    {
+     "scenario": "initial",
+     "wallStart": 1792455203013,
+     "wallEnd": 1792455209995,
+     "firstTileMs": 7522.400000035763,
+     "settledMs": 13340.199999988079,
+     "tiles": {
+      "requests": 161,
+      "transferBytes": 0,
+      "durationMedianMs": 314.4000000357628,
+      "durationP95Ms": 924.9000000357628
+     },
+     "memory": {
+      "jsHeapPeakMB": 227.18812561035156,
+      "jsHeapEndMB": 227.18812561035156
+     },
+     "extra": {
+      "gpuMemoryMB": 72.43282699584961
+     },
+     "network": {
+      "tileRequests": 161,
+      "tileBytes": 80605263,
+      "tileMedianMs": 314.48,
+      "tileP95Ms": 924.989,
+      "firstTileMs": 7459.923095703125,
+      "lastTileMs": 13234.937744140625
+     },
+     "process": {
+      "rendererPeakMB": 1314.734375,
+      "gpuPeakMB": 257.859375,
+      "totalPeakMB": 2090.6875
+     },
+     "drawnFraction": 0.23866705246913578,
+     "blank": false
+    }
+   ],
+   "allMemoryMB": [
+    null
+   ],
+   "system": {
+    "before": {
+     "freeMB": 2501.953125,
+     "swapUsedMB": 634.88
+    },
+    "end": {
+     "freeMB": 397.671875,
+     "swapUsedMB": 634.88
+    },
+    "swapGrewMB": 0
+   },
+   "failedTiles": 0,
+   "abortedTiles": 0,
+   "failedTileUrls": [],
+   "errors": []
+  },
+  {
+   "engine": "cesium",
+   "run": 1,
+   "engineInfo": {
+    "name": "cesium",
+    "version": "cesium 1.146.0",
+    "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1, Unspecified Version)",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+   },
+   "results": [
+    {
+     "scenario": "initial",
+     "wallStart": 1792455218051,
+     "wallEnd": 1792455224530,
+     "firstTileMs": 2504.5,
+     "settledMs": 7819.699999988079,
+     "tiles": {
+      "requests": 161,
+      "transferBytes": 0,
+      "durationMedianMs": 315.69999998807907,
+      "durationP95Ms": 841.8999999761581
+     },
+     "memory": {
+      "jsHeapPeakMB": 100.24297714233398,
+      "jsHeapEndMB": 94.9828929901123
+     },
+     "extra": {
+      "gpuMemoryMB": 72.43282699584961
+     },
+     "network": {
+      "tileRequests": 161,
+      "tileBytes": 80605084,
+      "tileMedianMs": 315.846,
+      "tileP95Ms": 842.04,
+      "firstTileMs": 2510.171875,
+      "lastTileMs": 7664.10791015625
+     },
+     "process": {
+      "rendererPeakMB": 1229.6875,
+      "gpuPeakMB": 255.15625,
+      "totalPeakMB": 1992.828125
+     },
+     "drawnFraction": 0.23866705246913578,
+     "blank": false
+    }
+   ],
+   "allMemoryMB": [
+    null
+   ],
+   "system": {
+    "before": {
+     "freeMB": 2414.453125,
+     "swapUsedMB": 634.88
+    },
+    "end": {
+     "freeMB": 375.53125,
+     "swapUsedMB": 634.88
+    },
+    "swapGrewMB": 0
+   },
+   "failedTiles": 0,
+   "abortedTiles": 0,
+   "failedTileUrls": [],
+   "errors": []
+  },
+  {
+   "engine": "cesium",
+   "run": 2,
+   "engineInfo": {
+    "name": "cesium",
+    "version": "cesium 1.146.0",
+    "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1, Unspecified Version)",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+   },
+   "results": [
+    {
+     "scenario": "initial",
+     "wallStart": 1792455234603,
+     "wallEnd": 1792455241208,
+     "firstTileMs": 4070.400000035763,
+     "settledMs": 9542.5,
+     "tiles": {
+      "requests": 161,
+      "transferBytes": 0,
+      "durationMedianMs": 320.5,
+      "durationP95Ms": 888.2000000476837
+     },
+     "memory": {
+      "jsHeapPeakMB": 124.1430606842041,
+      "jsHeapEndMB": 75.89107608795166
+     },
+     "extra": {
+      "gpuMemoryMB": 72.43282699584961
+     },
+     "network": {
+      "tileRequests": 161,
+      "tileBytes": 80605102,
+      "tileMedianMs": 320.55,
+      "tileP95Ms": 888.326,
+      "firstTileMs": 4074.198974609375,
+      "lastTileMs": 9372.7939453125
+     },
+     "process": {
+      "rendererPeakMB": 1203.078125,
+      "gpuPeakMB": 260.734375,
+      "totalPeakMB": 1983.609375
+     },
+     "drawnFraction": 0.23866705246913578,
+     "blank": false
+    }
+   ],
+   "allMemoryMB": [
+    null
+   ],
+   "system": {
+    "before": {
+     "freeMB": 2384.953125,
+     "swapUsedMB": 634.88
+    },
+    "end": {
+     "freeMB": 407.203125,
+     "swapUsedMB": 634.88
+    },
+    "swapGrewMB": 0
+   },
+   "failedTiles": 0,
+   "abortedTiles": 0,
+   "failedTileUrls": [],
+   "errors": []
+  }
+ ]
+}
