@@ -46,7 +46,7 @@ map.setVerticalFieldOfView(FOV_Y);
 map.pinRes?.(true);
 
 // 参考条件：?maxInflight=N で 3D Tiles の同時取得数を指定する（既定は低メモリ端末 3・他 6。iOS は低メモリ扱い）。
-// @ortho-earth/globe の add3DTiles の maxInflight を使う＝2.0.2 より後の版で効く（2.0.2 では無視される）
+// @ortho-earth/globe の add3DTiles の maxInflight を使う＝2.1.0 から効く（2.0.2 では無視される）
 const MAX_INFLIGHT = Number(new URLSearchParams(location.search).get("maxInflight")) || undefined;
 const tiles = await map.add3DTiles(TILESET_URL, { maxSSE: MAX_SSE, fit: false, ...(MAX_INFLIGHT && { maxInflight: MAX_INFLIGHT }) });
 

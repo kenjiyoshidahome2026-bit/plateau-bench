@@ -10,7 +10,7 @@ PLATEAU 千代田区 LOD2 建物（3D Tiles）を、5 つのブラウザ地図�
 | CesiumJS | cesium 1.146.0 | `Cesium3DTileset` |
 | TerriaJS | terriajs 8.13.0（TerriaMap） | init ファイルの `3d-tiles` |
 | Navara | @navaramap/three 0.2.1 | 3D Tiles ソース |
-| ortho-earth | @ortho-earth/globe 2.0.2 | `map.add3DTiles` |
+| ortho-earth | @ortho-earth/globe 2.1.0（2026-10-19〜20 の計測は 2.0.2） | `map.add3DTiles` |
 
 ## 何を測るか
 

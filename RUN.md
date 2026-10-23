@@ -56,7 +56,7 @@ npm run serve -- --runs 5 --terria http://<Mac の IP>:3002   # 起動時に開�
 |---|---|---|
 | `cesiumCull=0` | CesiumJS | カメラが動いている間のタイル要求の間引き・画面の端の後回し・遠くの細部の省略（`cullRequestsWhileMoving`・`foveatedScreenSpaceError`・`dynamicScreenSpaceError`） |
 | `navaraSse=1` | Navara | モバイルで LOD を自動で 8 倍粗くする倍率（`memoryBudget.sseMultiplierMin`）を 1 に |
-| `maxInflight=6` | ortho-earth | 3D Tiles の同時取得数（iOS は低メモリ扱いで 3）を指定。`@ortho-earth/globe` の 2.0.2 より後の版で効く |
+| `maxInflight=6` | ortho-earth | 3D Tiles の同時取得数（iOS は低メモリ扱いで 3）を指定。`@ortho-earth/globe` 2.1.0 から効く（2.0.2 では無視される） |
 
 ```bash
 npm run measure -- --runs 5 --vsync --engines cesium --query "cesiumCull=0" --out results-cesium-nocull
